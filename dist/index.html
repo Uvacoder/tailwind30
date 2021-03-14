@@ -1,0 +1,847 @@
+<!-- component -->
+<!DOCTYPE html>
+<html lang="en" class="scroll">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>#30DaysOfTailwindCSS</title>
+        <meta name="author" content="Michael Andreuzza">
+        <meta name="keywords" content="keywords,here">
+        <link rel="stylesheet" href="./css/tailwind.css" type="text/css">
+        <link rel="stylesheet" href="./css/30.css" type="text/css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicons/android-chrome-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./favicons/android-chrome-256x256.png">
+        <link rel="manifest" href="./favicons/site.webmanifest">
+        <link rel="mask-icon" href="./favicons/safari-pinned-tab.svg" color="#000000">
+        <meta name="msapplication-TileColor" content="#000000">
+        <meta name="theme-color" content="#000000">
+        <meta name="keywords" content="Tailwindcss webdeveloper css challenge" />
+        <meta name="description" content="30 Days of Tailwind CSS
+Keep yourself accountable while learning Tailwind. You'll be building components, layouts or anything with Tailwind in your favourite code editor and share them on Twitter with the hashtag
+#30DaysOfTailwindCSS." />
+        <!----- fb,pinterest, google + ----->
+        <meta property="og:title" content="30 Days of Tailwind CSS." />
+        <meta property="og:description"
+            content="Keep yourself accountable while learning Tailwind. You'll be building components, layouts or anything with Tailwind in your favourite code editor and share them on Twitter with the hashtag." />
+        <meta property="og:image" content="./assets/og.png" />
+        <meta property="og:url" content="https://30DaysOfTailwindCSS.com" />
+        <meta property="og:type" content="website" />
+        <!----- Twitter----->
+        <meta name="twitter:title" content="30 Days of Tailwind CSS || ." />
+        <meta name="twitter:card" content="Summary" />
+        <meta name="twitter:creator" content="@mike_andreuzza" />
+        <meta property="og:image" content="./assets/twitterOg.png" />
+        <meta name="twitter:url" content="https://30DaysOfTailwindCSS.com" />
+        <meta name="twitter:description" content="30DaysOfTailwindCSS.com - #30DaysOfTailwindCSS" />
+        <!-- Uncomment for cdn tailwind (if you haven't built your tailwind.css yet) <link href="https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css" rel="stylesheet">-->
+    </head>
+    <body class="bg-black">
+        <!------ Hero ------->
+        <section>
+            <div class="container px-5 py-8 mx-auto lg:px-40 ">
+                <div class="flex flex-col justify-center w-full mx-auto ">
+                    <h1 class="mb-4 text-center text-white">30 Days of Tailwind CSS</h1>
+                    <p class="text-4xl font-black leading-none tracking-tight text-center text-white lg:text-5xl">
+                        Keep yourself
+                        accountable while learning Tailwind. Share your process
+                        on Twitter with the hashtag
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 pt-6">
+                        <div class="py-4 md:w-1/4">
+                           <a href="https://twitter.com/search?q=%2330daysoftailwindcss&src=typed_query&f=live">
+                                <div
+                                    class="overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white ">
+                                    <div class="items-center rounded-lg ">
+                                        <div class="flex-grow p-6 py-2 rounded-lg">
+                                            <div class="inline-flex items-center w-full mx-auto text-white">
+                                                <span class="mx-auto text-xl font-semibold tracking-tighter ">
+                                                    #30DaysOfTailwindCSS
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                           </a>
+                        </div>
+                        <div class="py-4 md:w-1/4">
+                            <a href="http://tailwindcss.com/" target="_blank">
+                                <div
+                                    class="overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                                    <div class="items-center rounded-lg ">
+                                        <div class="flex-grow p-6 py-2 rounded-lg">
+                                            <div class="inline-flex items-center w-full mx-auto text-white">
+                                                <span
+                                                    class="mx-auto text-xl font-semibold tracking-tighter ">
+                                                    Tailwind Docs
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="text-gray-600 body-font">
+            <div class="container px-5 py-10 mx-auto lg:px-40">
+                <div class="flex flex-wrap -m-4">
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 bg-black rounded-t-lg text-lightBlue-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #1
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Install Tailwind CSS without any Javascript Framework locally with purgeCSS,
+                                            enable the dark mode option, preferences
+                                            or class is up to you.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 bg-black rounded-t-lg text-lightBlue-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #2
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Write some text including headings and subheadings, quotes, italics. Train
+                                            your typography.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 bg-black rounded-t-lg text-lightBlue-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #3
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create state buttons with a hover and a transition effect, like primary
+                                            button, secondary and for example disable.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 bg-black rounded-t-lg text-lightBlue-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #4
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create and rework a select element including options and style it with only
+                                            Tailwind.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 bg-black rounded-t-lg text-lightBlue-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #5
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a form with buttons, inputs and text areas. Remember the download and
+                                            upload buttons, those can be also included.
+                                            And center it in the middle. Make it responsive.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 bg-black rounded-t-lg text-lightBlue-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #6
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create an avatar inside a card along with some text, and make it 100%
+                                            reponsive.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-blue-300 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #7
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a navigation bar with logo, links and a CTA. Make it fixed, sticky or
+                                            normal.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-blue-400 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #8
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a grid with columns and rows, use tailwinds flexbox utilities make it
+                                            responsive.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-blue-500 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #9
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a 5 widget and position them differently on the website.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-blue-600 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #10
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Make a card with and image and text. The text has to be on top of the image,
+                                            use absolute and relative.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-blue-700 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #11
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Make some sections and a container within and give them different widths and
+                                            heights.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-blue-800 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #12
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a section with an image, with text to the right, left or underneath
+                                            or on top of it. Make it responsive.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-indigo-300 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #13
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a footer layout with links and logo. Remember the white space and to
+                                            make it responsive.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-indigo-400 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #14
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a sidebar, fixed, sticky or normal. include links and a top logo.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-indigo-500 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #15
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Make sidebar layout with left or right scrollable content.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-indigo-600 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #16
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create your color, font and shadow themes within the tailwind.config.js and
+                                            use them on any layout you created before.
+                                            Give them custom names.
+                                            .
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-indigo-700 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #17
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a kan ban layout, with cards and boxes and make it responsive.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-indigo-800 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #18
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Make a dropdown with links and icons. You can use Alpine.js too, why not.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-pink-300 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #19
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Make a dropdown with two columns, links and icons. Make it responsive.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-pink-400 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #20
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a layout, any of your choice. Use your creations as content, make it
+                                            responsive.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-pink-500 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #21
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a horizontal scrollable layout only using Tailwind CSS, for example a
+                                            card row and make it responsive.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-pink-600 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #22
+                                        <p class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a full width and height grid of two columns and 5 rows, make it
+                                            responsive.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-pink-700 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #23
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a grid with cards for your team and make them responsive, include a
+                                            picture, name and twitter.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 text-pink-800 bg-black rounded-t-lg">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #24
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a grid layout with cards, give them different widths and heights.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 bg-black rounded-t-lg text-rose-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #25
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create notifications for a few states with a close icon. Make it work with
+                                            Alpine.js
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 bg-black rounded-t-lg text-rose-400">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #26
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create some cards and give them different Tailwind gradients.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 bg-black rounded-t-lg text-rose-500">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #27
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Make some headings and give them a gradient color, use bg-clip-text
+                                            .
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 bg-black rounded-t-lg text-rose-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #28
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create pagination widgets. With a button group, separated and side to side.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 bg-black rounded-t-lg text-rose-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #29
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Create a pricing table with three or more cards, make this ones responsive.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 md:w-1/3">
+                        <div
+                            class="h-full overflow-hidden transition duration-500 ease-in-out transform bg-black border border-gray-800 rounded-lg hover:border-white">
+                            <div class="flex items-center w-full h-32 p-8 bg-black rounded-t-lg text-rose-800">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto" width="64" height="64"
+                                    viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none"
+                                    stroke-linecap="round" stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="9" />
+                                </svg>
+                            </div>
+                            <div class="p-6 border-t border-gray-800 rounded-b-lg shadow-xl">
+                                <div class="inline-flex items-center w-full text-white">
+                                    <span class="text-2xl font-semibold tracking-tighter">
+                                        Challenge #30
+                                        <p
+                                            class="mb-2 text-2xl font-normal leading-snug tracking-tight lg:text-base text-coolGray-400">
+                                            Re-create your favourite UI or a whole website only using Tailwind.
+                                        </p>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="border-t border-trueGray-800 body-font">
+            <div
+                class="container flex flex-col flex-wrap items-center px-5 py-6 mx-auto lg:px-40 md:flex-row md:flex-no-wrap ">
+                <nav class="flex flex-wrap items-center justify-center ">
+                    <span class="mr-6 text-sm font-semibold tracking-tighter text-blue-500"> OTHER PROJECTS</span>
+                    <a href="https://colorsandfonts.com" class="my-2 mr-4 text-xs text-gray-500 hover:text-blue-500">
+                        <p>ColorsAndFonts</p>
+                    </a>
+                    <a href="https://unicornsfeed.com/" class="my-2 mr-4 text-xs text-gray-500 hover:text-blue-500">
+                        <p>TheUnicornsFeed</p>
+                    </a>
+                    <a href="https://wickedtemplates.com" class="my-2 mr-4 text-xs text-gray-500 hover:text-blue-500">
+                        <p>WickedTemplates</p>
+                    </a>
+                    <a href="http://blocks.wickedtemplates.com/"
+                        class="my-2 mr-4 text-xs text-gray-500 hover:text-blue-500">
+                        <p>WickedTblocks</p>
+                    </a>
+                    <a href="https://tailwind-garden.michaelandreuzza.com/"
+                        class="my-2 mr-4 text-xs text-gray-500 hover:text-blue-500">
+                        <p>Tailwind Garden</p>
+                    </a>
+                    <a href="http://bruatlist.one/" class="my-2 mr-4 text-xs text-gray-500 hover:text-blue-500">
+                        <p>Brutalist One</p>
+                    </a>
+                </nav>
+                <div class="items-center block text-sm text-center lg:text-left md:inline-flex text-blueGray-500 ">
+                    <a href="https://twitter.com/Mike_Andreuzza"
+                        class="inline-flex items-center my-2 ml-2 text-gray-500 hover:text-blue-500">
+                        by @Mike_Andreuzza
+                        <img loading="lazy focus:outline-none" alt="team"
+                            class="flex-shrink-0 object-contain w-8 h-8 mx-4 ml-4 bg-gray-100 rounded-full objecfit lg:mb-0"
+                            src="https://d33wubrfki0l68.cloudfront.net/6d60ae66b2a50b1842d08156aeb53663fa328837/d7f97/assets/badges/mike.jpg">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
