@@ -11,9 +11,9 @@ module.exports = {
       './src/**/*.js',
    ],
  },
-  darkMode: 'media', // or 'media' or 'class'
   theme: {
     extend: {
+      
       fontSize: {
         xs: '0.75rem',
       sm: '0.875rem',

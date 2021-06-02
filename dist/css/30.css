@@ -1,17 +1,69 @@
-/* CSS HEX
---middle-red: #cf8f7aff;
---cedar-chest: #c45b43ff;
---pewter-blue: #819ba4ff;
-*/
-/*
---copper-red: #cc6a4bff;
---baby-pink: #e0bbb8ff;
---silver-sand: #afbec4ff;
---rich-black-fogra-29: #111216ff;
---black-coral: #565966ff;
---gray-x-11-gray: #b5b7bdff;
---light-gray: #ccced4ff;
---platinum: #e8e8e9ff;
---cultured: #f5f5f5ff;
-E8E8E8
-*/
+
+carbonads * {
+  margin: initial;
+  padding: initial;
+}
+#carbonads {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
+    sans-serif;
+}
+#carbonads {
+   display: flex;
+  z-index: 100;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  max-width: 330px;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);
+
+  border-radius: 8px;
+}
+#carbonads a {
+  color: inherit;
+  text-decoration: none;
+}
+#carbonads a:hover {
+  color: inherit;
+}
+#carbonads span {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+#carbonads .carbon-wrap {
+  display: flex;
+  border-radius: 8px;
+}
+#carbonads .carbon-img {
+  display: block;
+  margin: 0;
+  line-height: 1;
+}
+#carbonads .carbon-img img {
+  display: block;
+}
+#carbonads .carbon-text {
+  font-size: 13px;
+  padding: 10px;
+  margin-bottom: 16px;
+  line-height: 1.5;
+  text-align: left;
+}
+#carbonads .carbon-poweredby {
+  display: block;
+  padding: 6px 8px;
+  background: #f1f1f2;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  font-size: 8px;
+  line-height: 1;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 8px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
